@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <h1>Contact Us</h1>
+    <form action="#" method="post">
+        <div class="form-group">
+        <p>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="user_name" required>
+        </p>
+
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="user_email" required>
+        </p>
+
+        <p>
+            <label for="subject">Subject:</label><br>
+            <select id="subject" name="message_subject" required>
+                <option value="">--Please choose an option--</option>
+                <option value="general_inquiry">General Inquiry</option>
+                <option value="support_request">Support Request</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="user_message" rows="8" cols="50" required></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Send Message</button>
+        </p>
+        </div>
+    </form>
+</body>
+</html>
